@@ -2,16 +2,37 @@ import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
   :root {
-    --color-blackfont-titles: #5f6b6e;
-    --color-blackfont-text:#000000;
-    --color-background:#F5F5F5;
-    
-    --Font-heading-title:"Teko","sans-serif";
-    --font-text:"Cormorant Garamond", "sans-serif"; 
-    
+    --white: #fff;
+    --black: #000;
+    --primary: #ea6d27
+    --dark: #101a24;
+    --light: #f3f4f4;
+    --body-color: #5c6574;
+
+    --sm: 576px;
+    --md: 768px;
+    --lg: 992px;
+    --xl: 1200px;
+    --xxl: 1400px;
+
+    --font-family: "Inter", sans-serif;
+    --font-family-serif:"David Libre",serif;
   }
 
-  html, body, div, span, applet, object, iframe,
+body,html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--body-color);
+}
+
+a{
+text-decoration: none;
+transition:  .3s all ease;
+}
+  /*html, body, div, span, applet, object, iframe,
   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
   a, abbr, acronym, address, big, cite, code,
   del, dfn, em, img, ins, kbd, q, s, samp,
@@ -30,4 +51,6 @@ export default createGlobalStyle`
       box-sizing: border-box;
       font-size: 100%;
       vertical-align: baseline;
-  }`;
+  }*/
+
+  `;
