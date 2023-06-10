@@ -1,5 +1,9 @@
 .custom-navbar .logo img {
-    max-width: 150px;
+    max-width: 125px;
+}
+
+.logo {
+    transform: translateY(-14px);
 }
 
 .custom-navbar .custom-nav {
@@ -20,4 +24,121 @@
 
 .custom-navbar .custom-nav a:hover {
     color: var(--dark);
+}
+
+.btn {
+    height: 54px;
+    padding: 12px 30px;
+    font-size: 20px;
+    border-radius: 4px 15px 4px 15px;
+    font-family: var(--font-family-serif);
+}
+
+.btn:active,
+.btn:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.btn-primary {
+    border-color: var(--primary);
+    background-color: var(--primary);
+    color: var(--white);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.btn:hover {
+    border-color: var(--primary-darken);
+    background-color: var(--primary-darken);
+}
+
+.fa {
+    font-family: font-awesome;
+
+}
+
+/*-------------Home section-----------*/
+
+
+
+.hero-section #circle-type {
+    position: relative;
+    left: -55%;
+    text-align: left;
+    text-transform: uppercase;
+    font-family: var(--font-family);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    transition: .1s all-ease;
+    transform: rotate(120deg);
+    box-shadow: rgba(0, 0, 0, 0.35) 15px 5px 15px;
+}
+
+h1,
+p {
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 70px;
+    font-weight: 700;
+}
+
+p {
+    line-height: 29px;
+}
+
+.img-wrap {
+    position: relative;
+
+}
+
+.img-wrap:before,
+.img-wrap:after,
+.bg-down:after {
+    content: "";
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    opacity: 1;
+}
+
+.img-wrap:before {
+    background-image: url("../images/svg/scrollwork.svg");
+    width: 546px;
+    height: 130%;
+    top: -55px;
+    left: -105px;
+    opacity: .8;
+
+}
+
+.img-wrap:after {
+    background-image: url("../images/svg/scrollwork2.svg");
+    width: 546px;
+    height: 100%;
+    top: 25%;
+    left: 55%;
+    opacity: .8;
+
+
+}
+
+
+.img-wrap img {
+    border-radius: 100px 40px 100px 40px;
+}
+
+.float-image {
+    position: absolute;
+    width: 56%;
+    bottom: 0%;
+    left: 39%;
+    transform: translateX(10%);
+}
+
+.img-hero {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
