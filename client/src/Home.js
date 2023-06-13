@@ -4,8 +4,14 @@ import React, { useEffect, useRef } from "react";
 
 const Home = () => {
   const circleInstance = useRef();
+
   useEffect(() => {
     new CircleType(circleInstance.current).radius(50);
+
+    window.addEventListener("scroll", () => {
+      circleInstance.current.firstChild.style.transform =
+        "rotate(" + window.pageYOffset + "deg)";
+    });
   }, []);
 
   return (
@@ -15,9 +21,9 @@ const Home = () => {
           <div class="row align-items-center justify-content-between ">
             <div class="col-lg-6 mb-5 mb-lg-0 ">
               <div id="circle-type" ref={circleInstance}>
-                · Exquisite · Drinks
+                <span>· Exquisite · Drinks</span>
               </div>
-              <h1>Provide the best food for you.</h1>
+              <h1>Provide the best service for you.</h1>
               <div class="row">
                 <div class="col-lg-10">
                   <p>
@@ -36,9 +42,9 @@ const Home = () => {
                 </a>
               </div>
               <div class="social-icons">
-                <div class="social-icon-inner">
+                <div class="social-icons-inner">
                   <a href="#">
-                    <span class="fa-brands fa-facebook"></span>
+                    <span class="fa-brands fa-facebook-f"></span>
                   </a>
                   <a href="#">
                     <span class="fa-brands fa-twitter"></span>

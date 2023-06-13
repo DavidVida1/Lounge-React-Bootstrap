@@ -34,4 +34,8 @@ text-decoration: none;
 transition:  .3s all ease;
 }
 
-  `;
+h1, h2,h3,h4,h5 {
+  font-family: var(--font-family-serif);
+  color: var(--dark);
+}
+`;

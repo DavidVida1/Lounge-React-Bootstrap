@@ -4,7 +4,12 @@ import React from "react";
 const Header = () => {
   return (
     <>
-      <div class="custom-navbar m-4">
+      <div class="circles">
+        <span class="circle-1"></span>
+        <span class="circle-2"></span>
+        <span class="circle-3"></span>
+      </div>
+      <div class="custom-navbar my-4">
         <div class="container">
           <div class="row">
             <div class="col-6 col-md-6 col-lg-3 logo ">
@@ -35,7 +40,7 @@ const Header = () => {
                 </li>
               </ul>
             </div>
-            <div class="col-6 col-md-6 col-lg-3 text-end">
+            <div class=" col-6 col-md-6 col-lg-3  text-end">
               <a href="#" class="btn btn-primary">
                 Book a table
               </a>
