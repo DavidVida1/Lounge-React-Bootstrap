@@ -48,8 +48,8 @@ body:before{
 body .offcanvas-menu :before{
   opacity: 1;
   visibility: visible;
-
 }
+
 a{
 text-decoration: none;
 transition:  .3s all ease;

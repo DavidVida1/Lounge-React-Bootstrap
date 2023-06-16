@@ -1,5 +1,5 @@
 import GlobalStyles from "./GlobalStyles";
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Home";
