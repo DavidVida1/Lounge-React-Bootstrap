@@ -115,7 +115,7 @@
 }
 
 .hero-section {
-    padding: 1rem 0;
+    padding: 1.3rem 0;
     position: relative;
     z-index: 2;
 
@@ -156,7 +156,6 @@ p {
 .img-wrap {
     position: relative;
     z-index: 7;
-
 }
 
 .img-wrap:before,
@@ -189,8 +188,6 @@ p {
     left: 55%;
     opacity: .6;
     z-index: 3;
-
-
 }
 
 
@@ -308,13 +305,19 @@ p {
 }
 
 .special-drink-section {
-    padding: 6rem 0;
+    padding: 2rem 0;
     margin: 5%;
 }
 
 .special-drink-section .heading,
-.welcome .heading {
+.welcome-to-lounge .heading,
+.barman-section .heading {
     font-size: 60px;
+}
+
+.welcome-to-lounge {
+    padding: 2rem 0;
+    padding-bottom: 120px;
 }
 
 .drink-section .drink-info {
@@ -378,4 +381,82 @@ p {
 .drink-wrap:hover:before {
     opacity: 1;
     visibility: visible;
+}
+
+.img-wrap-welcome {
+    position: relative;
+    z-index: 7;
+}
+
+.img-wrap-welcome:before {
+    content: "";
+    z-index: 4;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    opacity: .3;
+}
+
+.img-wrap-welcome:before {
+    background-image: url("../images/svg/scrollwork-drinkAlone.svg");
+    width: 120%;
+    height: 60%;
+    top: 270px;
+    left: 70px;
+    opacity: .3;
+    z-index: -1;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+
+}
+
+
+.img-wrap-welcome img {
+    border-radius: 100px 40px 100px 40px;
+}
+
+/*-------------------------------------BARMAN SECTION--------------------*/
+.barman-section {
+    padding: 3rem 0;
+    background-color: var(--white);
+
+}
+
+.barman-section .custom-list li {
+    margin-bottom: 30px;
+    width: 45%;
+    display: inline-block;
+    position: relative;
+    padding-left: 40px;
+    float: left;
+}
+
+.barman-section .custom-list li:before {
+    left: 0;
+    top: 0;
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("../images/svg/checkbox.svg");
+}
+
+.scrollworkbg {
+    position: relative;
+}
+
+.scrollworkbg:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: -200px;
+    left: -150px;
+    opacity: .3;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-image: url("../images/svg/scrollworkBarman.svg");
 }

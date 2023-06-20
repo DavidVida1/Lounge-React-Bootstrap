@@ -213,16 +213,20 @@ const Home = () => {
       <section className="welcome-to-lounge">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-6">
-              <div className="img-wrap">
+            <div className="col-lg-6 mb-5 mb-lg-0" data-aos="fade-up">
+              <div className="img-wrap-welcome">
                 <img
-                  src="images/svg/drink-alone.svg"
+                  src="images/svg/drinkAlone.svg"
                   alt="Image"
-                  class="img-fluid"
+                  className="img-fluid"
                 />
               </div>
             </div>
-            <div className="col-lg-6">
+            <div
+              className="col-lg-6 ps-lg-5"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
               <h2 className="heading">Welcome to Our Lounge</h2>
               <div className="row">
                 <div className="col-lg-9">
@@ -241,6 +245,47 @@ const Home = () => {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="barman-section">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-lg-6 scrollworkbg" data-aos="fade-up">
+              <h2 className="heading mb-3"> Our Expert Barman</h2>
+              <p className="mb-5 pe-lg-5">
+                Aenean posuere risus mauris, non euismod odio mollis sit amet.
+                Nunc ac auctor dui, elementum luctus ipsum. Nullam bibendum
+                congue dignissim.
+              </p>
+              <ul className="custom-list list-unstyled mb-3 clearfix">
+                <li>Aenean posuere risus mauris, non euismod odio.</li>
+                <li>Aenean posuere risus mauris, non euismod odio.</li>
+                <li>Aenean posuere risus mauris, non euismod odio.</li>
+                <li>Aenean posuere risus mauris, non euismod odio.</li>
+                <li>Aenean posuere risus mauris, non euismod odio.</li>
+                <li>Aenean posuere risus mauris, non euismod odio.</li>
+              </ul>
+              <div>
+                <a href="#" className="btn btn-secondary me-2">
+                  Menu
+                </a>
+                <a href="#" className="btn btn-primary">
+                  Book a table
+                </a>
+              </div>
+            </div>
+            <div
+              className="col-lg-6 ps-lg-0"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <img
+                src="images/svg/barman.svg"
+                alt="image"
+                className="img-fluid"
+              />
             </div>
           </div>
         </div>
