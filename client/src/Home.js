@@ -2,6 +2,9 @@ import styled from "styled-components";
 import CircleType from "circletype";
 import React, { useEffect, useRef } from "react";
 import AOS from "aos";
+import { tns } from "../node_modules/tiny-slider/src/tiny-slider";
+
+//import of AOS + CircleType + minislider
 
 const Home = () => {
   const circleInstance = useRef();
@@ -19,6 +22,29 @@ const Home = () => {
       circleInstance.current.firstChild.style.transform =
         "rotate(" + window.pageYOffset + "deg)";
     });
+
+    let tinyslider = function () {
+      let el = document.querySelectorAll(".review-slider");
+
+      if (el.length > 0) {
+        let slider = tns({
+          container: "review-slider",
+          items: 1,
+          center: true,
+          loop: false,
+          mouseDrag: true,
+          slideBy: 1,
+          axis: "horizontal",
+          swipeAngle: true,
+          speed: 700,
+          nav: true,
+          controls: false,
+          responsive: {
+            900: { edgePadding: 30, items: 2 },
+          },
+        });
+      }
+    };
   }, []);
 
   return (
@@ -131,7 +157,6 @@ const Home = () => {
                 </div>
               </div>
             </div>
-
             <div
               className="col-lg-3 col-md-6 col-sm-6 col-6 mb-4 mb-lg-0"
               data-aos="fade-up"
@@ -210,6 +235,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+
       <section className="welcome-to-lounge">
         <div className="container">
           <div className="row align-items-center">
@@ -286,6 +312,83 @@ const Home = () => {
                 alt="image"
                 className="img-fluid"
               />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="review-section">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-6 mx-auto text-center">
+              <h2 className="heading mb-3">Our Happy Customers</h2>
+              <p className="mb-4">
+                Aenean posuere risus mauris, non euismod odio mollis sit amet.
+                Nunc ac auctor dui, elementum luctus ipsum.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="review-slider-wrap text-center">
+          <div className="review-slider">
+            <div className="item">
+              <div className="row justify-content-center">
+                <div className="col-lg-11 mx-auto">
+                  <div className="review-block text-center">
+                    <div className="author-pic">
+                      <img
+                        src="images/svg/person-1.svg"
+                        alt="Sonia Lopez"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div className="star mb-3">
+                      <img
+                        src="images/svg/star.svg"
+                        alt="star"
+                        className="img-fluid"
+                      />
+                      <img
+                        src="images/svg/star.svg"
+                        alt="star"
+                        className="img-fluid"
+                      />
+                      <img
+                        src="images/svg/star.svg"
+                        alt="star"
+                        className="img-fluid"
+                      />
+                      <img
+                        src="images/svg/star.svg"
+                        alt="star"
+                        className="img-fluid"
+                      />
+                      <img
+                        src="images/svg/star.svg"
+                        alt="star"
+                        className="img-fluid"
+                      />
+                    </div>
+                    <blockquote className="mb-4">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Proin mollis orci lorem, nec suscipit leo placerat eget.
+                        Nulla euismod orci in odio euismod, in blandit ligula
+                        bibendum. Maecenas rutrum, justo eu dignissim rhoncus,
+                        tortor lorem pretium ex, ac auctor nisl mi eget ex.
+                        Aliquam rutrum est neque, ac blandit velit vulputate
+                        vel.
+                      </p>
+                    </blockquote>
+                    <div className="author-info">
+                      <h3 className="font-weight-bold">Sonia Lopez</h3>
+                      <span className="career d-block mb-3">
+                        CEO &amp; Founder, XYZ Inc.
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

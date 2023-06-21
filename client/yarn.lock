@@ -5556,10 +5556,10 @@
     "memory-fs" "^0.5.0"
     "tapable" "^1.0.0"
 
-"enhanced-resolve@^5.14.1":
-  "integrity" "sha512-Vklwq2vDKtl0y/vtwjSesgJ5MYS7Etuk5txS8VdKL4AOS1aUlD96zqIfsOSLQsdv3xgMRbtkWM8eG9XDfKUPow=="
-  "resolved" "https://registry.npmjs.org/enhanced-resolve/-/enhanced-resolve-5.14.1.tgz"
-  "version" "5.14.1"
+"enhanced-resolve@^5.15.0":
+  "integrity" "sha512-LXYT42KJ7lpIKECr2mAXIaMldcNCh/7E0KBKOu4KSfkHmP+mZmSs+8V5gBAqisWBy0OO4W5Oyys0GO1Y8KtdKg=="
+  "resolved" "https://registry.npmjs.org/enhanced-resolve/-/enhanced-resolve-5.15.0.tgz"
+  "version" "5.15.0"
   dependencies:
     "graceful-fs" "^4.2.4"
     "tapable" "^2.2.0"
@@ -12201,7 +12201,7 @@
     "ajv" "^6.12.4"
     "ajv-keywords" "^3.5.2"
 
-"schema-utils@^3.0.0", "schema-utils@^3.1.1", "schema-utils@^3.1.2":
+"schema-utils@^3.0.0", "schema-utils@^3.1.1", "schema-utils@^3.2.0":
   "integrity" "sha512-0zTyLGyDJYd/MBxG1AhJkKa6fpEBds4OQO2ut0w7OYG+ZGhGea09lijvzsqegYSik88zc7cUtIlnnO+/BvD6gQ=="
   "resolved" "https://registry.npmjs.org/schema-utils/-/schema-utils-3.2.0.tgz"
   "version" "3.2.0"
@@ -13331,6 +13331,11 @@
   dependencies:
     "setimmediate" "^1.0.4"
 
+"tiny-slider@^2.9.4":
+  "integrity" "sha512-LAs2kldWcY+BqCKw4kxd4CMx2RhWrHyEePEsymlOIISTlOVkjfK40sSD7ay73eKXBLg/UkluAZpcfCstimHXew=="
+  "resolved" "https://registry.npmjs.org/tiny-slider/-/tiny-slider-2.9.4.tgz"
+  "version" "2.9.4"
+
 "tmp@^0.0.33":
   "integrity" "sha512-jRCJlojKnZ3addtTOjdIqoRuPEKBvNXcGYqzO6zWZX8KfKEpnGY5jfggJQ3EjKuu8D4bJRr0y+cYJFmYbImXGw=="
   "resolved" "https://registry.npmjs.org/tmp/-/tmp-0.0.33.tgz"
@@ -14072,9 +14077,9 @@
   "version" "3.2.3"
 
 "webpack@^4.0.0 || ^5.0.0", "webpack@^4.37.0 || ^5.0.0", "webpack@^4.4.0 || ^5.9.0", "webpack@^4.44.2 || ^5.47.0", "webpack@^5.0.0", "webpack@^5.1.0", "webpack@^5.20.0", "webpack@^5.64.4", "webpack@>= 4", "webpack@>=2", "webpack@>=4.43.0 <6.0.0":
-  "integrity" "sha512-3BOvworZ8SO/D4GVP+GoRC3fVeg5MO4vzmq8TJJEkdmopxyazGDxN8ClqN12uzrZW9Tv8EED8v5VSb6Sqyi0pg=="
-  "resolved" "https://registry.npmjs.org/webpack/-/webpack-5.86.0.tgz"
-  "version" "5.86.0"
+  "integrity" "sha512-GOu1tNbQ7p1bDEoFRs2YPcfyGs8xq52yyPBZ3m2VGnXGtV9MxjrkABHm4V9Ia280OefsSLzvbVoXcfLxjKY/Iw=="
+  "resolved" "https://registry.npmjs.org/webpack/-/webpack-5.87.0.tgz"
+  "version" "5.87.0"
   dependencies:
     "@types/eslint-scope" "^3.7.3"
     "@types/estree" "^1.0.0"
@@ -14085,7 +14090,7 @@
     "acorn-import-assertions" "^1.9.0"
     "browserslist" "^4.14.5"
     "chrome-trace-event" "^1.0.2"
-    "enhanced-resolve" "^5.14.1"
+    "enhanced-resolve" "^5.15.0"
     "es-module-lexer" "^1.2.1"
     "eslint-scope" "5.1.1"
     "events" "^3.2.0"
@@ -14095,7 +14100,7 @@
     "loader-runner" "^4.2.0"
     "mime-types" "^2.1.27"
     "neo-async" "^2.6.2"
-    "schema-utils" "^3.1.2"
+    "schema-utils" "^3.2.0"
     "tapable" "^2.1.1"
     "terser-webpack-plugin" "^5.3.7"
     "watchpack" "^2.4.0"

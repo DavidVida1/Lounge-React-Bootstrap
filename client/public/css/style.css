@@ -311,7 +311,8 @@ p {
 
 .special-drink-section .heading,
 .welcome-to-lounge .heading,
-.barman-section .heading {
+.barman-section .heading,
+.review-section .heading {
     font-size: 60px;
 }
 
@@ -459,4 +460,87 @@ p {
     background-repeat: no-repeat;
     position: absolute;
     background-image: url("../images/svg/scrollworkBarman.svg");
+}
+
+/*------------Review-Section-------------------------*/
+.review-section {
+    position: relative;
+}
+
+.review-slider-wrap {
+    position: relative;
+}
+
+.tns-nav {
+    position: relative;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tns-nav button {
+    background: none;
+    border: none;
+    display: inline-block;
+    position: relative;
+    width: 0 !important;
+    height: 7px !important;
+    margin: 2px;
+}
+
+.tns-nav button:active,
+.tns-nav button:focus,
+.tns-nav button:hover {
+    outline: none;
+    box-shadow: none;
+    background: none;
+}
+
+.tns-nav button:before {
+    display: block;
+    width: 7px;
+    height: 7px;
+    left: 0;
+    top: 0;
+    position: absolute;
+    content: "";
+    border-radius: 50%;
+    transition: .3s all ease;
+    background-color: var(--dark);
+}
+
+.tns-nav button:hover:before,
+.tns-nav-active:before {
+    background-color: var(--primary);
+}
+
+.review-block {
+    background: var(--white);
+    border-radius: 100px 40px 100px 40px;
+    padding: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.author-pic {
+    position: relative;
+    margin-top: -100px;
+    margin-bottom: 3px;
+}
+
+.author-pic img {
+    width: 100px;
+}
+
+blockquote {
+    color: var(--dark)
+}
+
+.author-info h3 {
+    font-size: 16px;
+    font-family: var(--font-family);
+    margin-bottom: 0;
+}
+
+.author-info .career {
+    font-size: 15px;
 }
