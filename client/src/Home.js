@@ -28,7 +28,7 @@ const Home = () => {
 
       if (el.length > 0) {
         let slider = tns({
-          container: "review-slider",
+          container: ".review-slider",
           items: 1,
           center: true,
           loop: false,
@@ -45,6 +45,7 @@ const Home = () => {
         });
       }
     };
+    tinyslider();
   }, []);
 
   return (
@@ -329,7 +330,11 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="review-slider-wrap text-center">
+        <div
+          className="review-slider-wrap text-center"
+          data-aos="fade-right"
+          data-aos-delay="500"
+        >
           <div className="review-slider">
             <div className="item">
               <div className="row justify-content-center">
@@ -390,6 +395,128 @@ const Home = () => {
                 </div>
               </div>
             </div>
+            {/*second item start*/}
+            <div className="item">
+              <div className="row justify-content-center">
+                <div className="col-lg-11 mx-auto">
+                  <div className="review-block text-center">
+                    <div className="author-pic">
+                      <img
+                        src="images/svg/person-1.svg"
+                        alt="Sonia Lopez"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div className="star mb-3">
+                      <img
+                        src="images/svg/star.svg"
+                        alt="star"
+                        className="img-fluid"
+                      />
+                      <img
+                        src="images/svg/star.svg"
+                        alt="star"
+                        className="img-fluid"
+                      />
+                      <img
+                        src="images/svg/star.svg"
+                        alt="star"
+                        className="img-fluid"
+                      />
+                      <img
+                        src="images/svg/star.svg"
+                        alt="star"
+                        className="img-fluid"
+                      />
+                      <img
+                        src="images/svg/star.svg"
+                        alt="star"
+                        className="img-fluid"
+                      />
+                    </div>
+                    <blockquote className="mb-4">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Proin mollis orci lorem, nec suscipit leo placerat eget.
+                        Nulla euismod orci in odio euismod, in blandit ligula
+                        bibendum. Maecenas rutrum, justo eu dignissim rhoncus,
+                        tortor lorem pretium ex, ac auctor nisl mi eget ex.
+                        Aliquam rutrum est neque, ac blandit velit vulputate
+                        vel.
+                      </p>
+                    </blockquote>
+                    <div className="author-info">
+                      <h3 className="font-weight-bold">Sonia Lopez</h3>
+                      <span className="career d-block mb-3">
+                        CEO &amp; Founder, XYZ Inc.
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/*second item end*/}
+            {/*third item start*/}
+            <div className="item">
+              <div className="row justify-content-center">
+                <div className="col-lg-11 mx-auto">
+                  <div className="review-block text-center">
+                    <div className="author-pic">
+                      <img
+                        src="images/svg/person-1.svg"
+                        alt="Sonia Lopez"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div className="star mb-3">
+                      <img
+                        src="images/svg/star.svg"
+                        alt="star"
+                        className="img-fluid"
+                      />
+                      <img
+                        src="images/svg/star.svg"
+                        alt="star"
+                        className="img-fluid"
+                      />
+                      <img
+                        src="images/svg/star.svg"
+                        alt="star"
+                        className="img-fluid"
+                      />
+                      <img
+                        src="images/svg/star.svg"
+                        alt="star"
+                        className="img-fluid"
+                      />
+                      <img
+                        src="images/svg/star.svg"
+                        alt="star"
+                        className="img-fluid"
+                      />
+                    </div>
+                    <blockquote className="mb-4">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Proin mollis orci lorem, nec suscipit leo placerat eget.
+                        Nulla euismod orci in odio euismod, in blandit ligula
+                        bibendum. Maecenas rutrum, justo eu dignissim rhoncus,
+                        tortor lorem pretium ex, ac auctor nisl mi eget ex.
+                        Aliquam rutrum est neque, ac blandit velit vulputate
+                        vel.
+                      </p>
+                    </blockquote>
+                    <div className="author-info">
+                      <h3 className="font-weight-bold">Sonia Lopez</h3>
+                      <span className="career d-block mb-3">
+                        CEO &amp; Founder, XYZ Inc.
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/*third item end*/}
           </div>
         </div>
       </section>

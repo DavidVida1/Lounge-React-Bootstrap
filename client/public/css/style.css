@@ -464,21 +464,27 @@ p {
 
 /*------------Review-Section-------------------------*/
 .review-section {
+    padding: 3rem 0;
     position: relative;
 }
 
-.review-slider-wrap {
+.review-section .tns-inner {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+.review-section .review-slider-wrap {
     position: relative;
 }
 
-.tns-nav {
-    position: relative;
-    bottom: -50px;
+.review-section .review-slider-wrap .tns-nav {
+    position: absolute;
+    bottom: 0px;
     left: 50%;
     transform: translateX(-50%);
 }
 
-.tns-nav button {
+.review-section .review-slider-wrap .tns-nav button {
     background: none;
     border: none;
     display: inline-block;
@@ -488,15 +494,15 @@ p {
     margin: 2px;
 }
 
-.tns-nav button:active,
-.tns-nav button:focus,
-.tns-nav button:hover {
+.review-slider-wrap .tns-nav button:active,
+.review-slider-wrap .tns-nav button:focus,
+.review-slider-wrap .tns-nav button:hover {
     outline: none;
     box-shadow: none;
     background: none;
 }
 
-.tns-nav button:before {
+.review-slider-wrap .tns-nav button:before {
     display: block;
     width: 7px;
     height: 7px;
@@ -506,12 +512,12 @@ p {
     content: "";
     border-radius: 50%;
     transition: .3s all ease;
-    background-color: var(--dark);
+    background-color: rgba(0, 0, 0, 0.35);
 }
 
-.tns-nav button:hover:before,
-.tns-nav-active:before {
-    background-color: var(--primary);
+.review-slider-wrap .tns-nav button:hover:before,
+.review-slider-wrap .tns-nav button.tns-nav-active:before {
+    background-color: var(--primary) !important;
 }
 
 .review-block {
