@@ -402,8 +402,8 @@ const Home = () => {
                   <div className="review-block text-center">
                     <div className="author-pic">
                       <img
-                        src="images/svg/person-1.svg"
-                        alt="Sonia Lopez"
+                        src="images/svg/person-2.svg"
+                        alt="George Lucas"
                         class="img-fluid"
                       />
                     </div>
@@ -446,7 +446,7 @@ const Home = () => {
                       </p>
                     </blockquote>
                     <div className="author-info">
-                      <h3 className="font-weight-bold">Sonia Lopez</h3>
+                      <h3 className="font-weight-bold">George Lucas</h3>
                       <span className="career d-block mb-3">
                         CEO &amp; Founder, XYZ Inc.
                       </span>
@@ -463,8 +463,8 @@ const Home = () => {
                   <div className="review-block text-center">
                     <div className="author-pic">
                       <img
-                        src="images/svg/person-1.svg"
-                        alt="Sonia Lopez"
+                        src="images/svg/person-3.svg"
+                        alt="Andrew Lucas"
                         class="img-fluid"
                       />
                     </div>
@@ -507,7 +507,7 @@ const Home = () => {
                       </p>
                     </blockquote>
                     <div className="author-info">
-                      <h3 className="font-weight-bold">Sonia Lopez</h3>
+                      <h3 className="font-weight-bold">Andrew Lucas</h3>
                       <span className="career d-block mb-3">
                         CEO &amp; Founder, XYZ Inc.
                       </span>
@@ -517,6 +517,25 @@ const Home = () => {
               </div>
             </div>
             {/*third item end*/}
+          </div>
+        </div>
+      </section>
+      <section className="subscribe-section">
+        <div className="container">
+          <div className="subscribe-wrap">
+            <div className="row">
+              <div className="col-lg-8 mx-auto text-center subscribe-form-wrap">
+                <h3>Get our Promo Code by Subscribing to Our Newsletter</h3>
+                <form action="#" className="subscribe-form">
+                  <input
+                    typpe="email"
+                    placeholder="enter your email"
+                    className="form-control"
+                  />
+                  <button className="btn btn-primary">subscribe</button>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </section>
