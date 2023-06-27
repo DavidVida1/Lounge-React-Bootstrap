@@ -7,6 +7,7 @@ export default createGlobalStyle`
     --primary: #ea6d27;
     --primary-darken:#642a0a;
     --dark: #101a24;
+    --dark2: #333a41;
     --light: #f3f4f4;
     --body-color: #5c6574;
     --body-bgcolor: rgba(16, 26, 36, 0.05);

@@ -520,7 +520,11 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="subscribe-section">
+      <section
+        className="subscribe-section"
+        data-aos="fade-up"
+        data-aos-delay="300"
+      >
         <div className="container">
           <div className="subscribe-wrap">
             <div className="row">
