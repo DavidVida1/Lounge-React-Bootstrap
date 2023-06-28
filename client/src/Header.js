@@ -1,11 +1,24 @@
 import styled from "styled-components";
 import React from "react";
+import navbar from "./Navbar.js";
 
 const Header = () => {
   return (
     <>
+      <div className="site-mobile-menu site-navbar-target">
+        <div className="site-mobile-menu-header">
+          <div className="site-mobile-menu-close">
+            <span className="js-menu-toggle"></span>
+          </div>
+        </div>
+      </div>
+
       <div className="circles-bg-navbar-hero-section-wrap custom-index">
-        <div className="custom-navbar py-4">
+        <div
+          className="custom-navbar py-4"
+          data-aos="fade-left"
+          data-aos-delay="300"
+        >
           <div className="container">
             <div className="row">
               <div className="col-6 col-md-6 col-lg-3 logo ">
@@ -40,6 +53,11 @@ const Header = () => {
                 <a href="#" className="btn btn-primary">
                   Book a table
                 </a>
+
+                <a
+                  href="#"
+                  className="ms-3 burger ml-auto float-end site-menu-toggle js-menu-toggle d-inline-block d-lg-none"
+                ></a>
               </div>
             </div>
           </div>
