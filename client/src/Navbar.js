@@ -3,7 +3,7 @@ const navbar = () => {
 
   const siteMenuClone = () => {
     const jsCloneNavs = document.querySelectorAll(".js-clone-nav");
-    siteMobileMenuBody = document.querySelector(".site-mobile-menu-body");
+    const siteMobileMenuBody = document.querySelector(".site-mobile-menu-body");
 
     jsCloneNavs.forEach((nav) => {
       const navCloned = nav.cloneNode(true);
@@ -43,7 +43,7 @@ const navbar = () => {
     menuToggle.forEach((mtoggle) => {
       mTog = mtoggle;
       mtoggle.addEventListener("click", (e) => {
-        if (document.body.classList.contains("offcanvas-menu")) {
+        if (document.body.classList.contains("offCanvas-menu")) {
           document.body.classList.remove("offCanvas-menu");
           mtoggle.classList.remove("active");
           mTog.classList.remove("active");
@@ -77,6 +77,5 @@ const navbar = () => {
 
   siteMenuClone();
 };
-navbar();
 
 export default navbar;

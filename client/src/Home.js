@@ -344,7 +344,7 @@ const Home = () => {
                       <img
                         src="images/svg/person-1.svg"
                         alt="Sonia Lopez"
-                        class="img-fluid"
+                        className="img-fluid"
                       />
                     </div>
                     <div className="star mb-3">
@@ -404,7 +404,7 @@ const Home = () => {
                       <img
                         src="images/svg/person-2.svg"
                         alt="George Lucas"
-                        class="img-fluid"
+                        className="img-fluid"
                       />
                     </div>
                     <div className="star mb-3">
@@ -465,7 +465,7 @@ const Home = () => {
                       <img
                         src="images/svg/person-3.svg"
                         alt="Andrew Lucas"
-                        class="img-fluid"
+                        className="img-fluid"
                       />
                     </div>
                     <div className="star mb-3">

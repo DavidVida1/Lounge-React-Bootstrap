@@ -112,7 +112,7 @@ const Footer = () => {
               © 2023 Restaurant. All Rights Reserved
             </div>
             <div className="col-md-6 text-left text-md-end">
-              <a href="#" class="me-md-5">
+              <a href="#" className="me-md-5">
                 Terms of Service
               </a>
               <a href="#">Privacy Policy</a>

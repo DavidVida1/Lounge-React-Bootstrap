@@ -218,6 +218,12 @@
     transform: rotate(45deg);
 }
 
+.burger .active:after {
+    -webkit-transform: rotate(-45deg);
+    -moz-tranform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
 .burger:focus {
     outline: none;
 }

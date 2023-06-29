@@ -1,8 +1,12 @@
 import styled from "styled-components";
-import React from "react";
+import React, { useEffect } from "react";
 import navbar from "./Navbar.js";
 
 const Header = () => {
+  useEffect(() => {
+    navbar();
+  });
+
   return (
     <>
       <div className="site-mobile-menu site-navbar-target">
