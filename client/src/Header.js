@@ -11,7 +11,7 @@ const Header = () => {
 
       <div className="site-mobile-menu site-navbar-target">
         <div className="site-mobile-menu-header">
-          <div className="site-mobile-menu-close">
+          <div className="icofont-close site-mobile-menu-close">
             <span className="js-menu-toggle"></span>
           </div>
         </div>

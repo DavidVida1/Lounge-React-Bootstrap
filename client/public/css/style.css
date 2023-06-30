@@ -63,6 +63,7 @@
 .site-mobile-menu-header .site-mobile-menu-close {
     float: right;
     margin-top: 8px;
+
 }
 
 .site-mobile-menu-header span {
@@ -108,6 +109,7 @@
     margin: 0;
     list-style: none;
     position: relative;
+    padding: 20px;
 }
 
 .site-nav-wrap a {
@@ -153,7 +155,7 @@
 
 .site-nav-wrap li li a {
     padding-left: 20px;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .burger {
