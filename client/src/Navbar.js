@@ -1,15 +1,18 @@
-const navbar = () => {
-  "use strict";
+import { useState, useEffect } from "react";
 
+const Navbar = ({ setCanvas, offMenuCanvas }) => {
   const siteMenuClone = () => {
     const jsCloneNavs = document.querySelectorAll(".js-clone-nav");
     const siteMobileMenuBody = document.querySelector(".site-mobile-menu-body");
 
     jsCloneNavs.forEach((nav) => {
+      //for each of jsClonNavs wich is an array(because of querySelectorAll)
       const navCloned = nav.cloneNode(true);
       //modifies the class of navCloned to site-nav-wrap
-      navCloned.setAttribute("className", "site-nav-wrap");
+      navCloned.setAttribute("class", "site-nav-wrap");
+      //
       siteMobileMenuBody.appendChild(navCloned);
+      // i put navcloned at siteMobodileMenuBody
     });
 
     setTimeout(() => {
@@ -19,9 +22,10 @@ const navbar = () => {
 
       const counter = 0;
       hasChildrens.forEach((hasChild) => {
-        const refEl = hasChild.createElement("a");
+        const refEl = hasChild.querySelector("a");
+
         const newElSpan = document.createElement("span");
-        newElSpan.setAttribute("className", "arrow-collapse collpased");
+        newElSpan.setAttribute("class", "arrow-collapse collpased");
 
         hasChild.insertBefore(newElSpan, refEl);
 
@@ -30,25 +34,35 @@ const navbar = () => {
         arrowCollapse.setAttribute("data-toggle", "#collapseItem" + counter);
 
         const dropdown = hasChild.querySelector(".dropdown");
-        dropdown.setAttribute("ClassName", "collapse");
+        dropdown.setAttribute("class", "collapse");
         dropdown.setAttribute("id", "collapseItem" + counter);
 
         counter++;
+        console.log(counter);
       });
+      console.log(hasChildrens);
     }, 1000);
 
-    const menuToggle = document.querySelectorAll(".js-menu-tggle"); //weird
+    const menuToggle = document.querySelectorAll(".js-menu-toggle");
     let mTog;
+
+    console.log(menuToggle);
 
     menuToggle.forEach((mtoggle) => {
       mTog = mtoggle;
       mtoggle.addEventListener("click", (e) => {
+        e.preventDefault();
+        console.log(e.target);
         if (document.body.classList.contains("offCanvas-menu")) {
+          console.log("Bonjours mrs chang");
           document.body.classList.remove("offCanvas-menu");
+          /* setCanvas(false);*/
           mtoggle.classList.remove("active");
           mTog.classList.remove("active");
         } else {
-          document.body.classList.add("offcanvas-menu");
+          console.log("hi1");
+          document.body.classList.add("offCanvas-menu");
+          /* setCanvas(true);*/
           mtoggle.classList.add("active");
           mTog.classList.add("active");
         }
@@ -67,15 +81,23 @@ const navbar = () => {
       });
 
       if (!isClickInside && !mt) {
-        if (document.body.classList.contains("offcanvas-menu")) {
-          document.body.classList.remove("offcanvas-menu");
+        if (document.body.classList.contains("offCanvas-menu")) {
+          document.body.classList.remove("offCanvas-menu");
           mtoggleTemp.classList.remove("active");
         }
       }
     });
   };
 
-  siteMenuClone();
+  useEffect(() => {
+    console.log(offMenuCanvas);
+  }, [offMenuCanvas]);
+
+  useEffect(() => {
+    siteMenuClone();
+  }, []);
+
+  return <></>;
 };
 
-export default navbar;
+export default Navbar;

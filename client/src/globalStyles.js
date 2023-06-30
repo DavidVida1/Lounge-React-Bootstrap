@@ -32,6 +32,7 @@ body {
     color: var(--body-color);
     background: var(--body-bgcolor);
 }
+
 body:before{
   content:"";
   position: fixed;
@@ -43,10 +44,9 @@ body:before{
   right: 0;
   bottom: 0;
   background: rgba(0,0,0,0.2) ;
-  transition: 3s all ease;
+ /* transition: 3s all ease;*/
 }
-
-body .offcanvas-menu :before{
+body.offCanvas-menu:before{
   opacity: 1;
   visibility: visible;
 }

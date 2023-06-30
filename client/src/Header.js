@@ -1,20 +1,21 @@
 import styled from "styled-components";
-import React, { useEffect } from "react";
-import navbar from "./Navbar.js";
+import React, { useEffect, useState } from "react";
+import Navbar from "./Navbar.js";
 
 const Header = () => {
-  useEffect(() => {
-    navbar();
-  });
+  const [offCanvasMenu, setOffCanvasMenu] = useState(false);
 
   return (
     <>
+      <Navbar setCanvas={setOffCanvasMenu} offMenuCanvas={offCanvasMenu} />
+
       <div className="site-mobile-menu site-navbar-target">
         <div className="site-mobile-menu-header">
           <div className="site-mobile-menu-close">
             <span className="js-menu-toggle"></span>
           </div>
         </div>
+        <div className="site-mobile-menu-body"></div>
       </div>
 
       <div className="circles-bg-navbar-hero-section-wrap custom-index">
@@ -35,7 +36,7 @@ const Header = () => {
                 </a>
               </div>
               <div className="col-lg-6 d-none d-lg-block text-center">
-                <ul className="custom-nav mt-2">
+                <ul className="custom-nav js-clone-nav mt-2">
                   <li>
                     <a href="#">Menu</a>
                   </li>
@@ -53,15 +54,17 @@ const Header = () => {
                   </li>
                 </ul>
               </div>
-              <div className=" col-6 col-md-6 col-lg-3  text-end">
-                <a href="#" className="btn btn-primary">
+              <div className=" col-6 col-md-6 col-lg-3  text-end ">
+                <a href="#" className="btn btn-primary ">
                   Book a table
                 </a>
 
                 <a
                   href="#"
                   className="ms-3 burger ml-auto float-end site-menu-toggle js-menu-toggle d-inline-block d-lg-none"
-                ></a>
+                >
+                  <span></span>
+                </a>
               </div>
             </div>
           </div>
