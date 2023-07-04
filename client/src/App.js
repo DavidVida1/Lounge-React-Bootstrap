@@ -11,9 +11,7 @@ const App = () => {
     <BrowserRouter>
       <GlobalStyles />
       <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
+      <Home />
       <Footer />
     </BrowserRouter>
   );

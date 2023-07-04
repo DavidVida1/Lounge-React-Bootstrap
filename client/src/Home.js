@@ -100,14 +100,14 @@ const Home = () => {
                 <div className="img-wrap">
                   <div className="bg-down"></div>
                   <img
-                    src="images/svg/whisky.svg"
+                    src="./images/svg/whisky.svg"
                     alt="image whisky"
                     className="float-image"
                     data-aos="fade-left"
                     data-aos-delay="200"
                   ></img>
                   <img
-                    src="images/svg/hero.svg"
+                    src="./images/svg/hero.svg"
                     alt="image whisky"
                     className="img-fluid img-hero"
                   ></img>
@@ -141,7 +141,7 @@ const Home = () => {
               <div className="drink-wrap h-100 active">
                 <a href="#" className="drink-thumbnail">
                   <img
-                    src="images/svg/drink1.svg"
+                    src="./images/svg/drink1.svg"
                     alt="Image"
                     className="img-fluid"
                   />
@@ -166,7 +166,7 @@ const Home = () => {
               <div className="drink-wrap h-100 ">
                 <a href="#" className="drink-thumbnail">
                   <img
-                    src="images/svg/drink2.svg"
+                    src="./images/svg/drink2.svg"
                     alt="Image"
                     className="img-fluid"
                   />
@@ -191,7 +191,7 @@ const Home = () => {
               <div className="drink-wrap h-100 ">
                 <a href="#" className="drink-thumbnail">
                   <img
-                    src="images/svg/drink3.svg"
+                    src="./images/svg/drink3.svg"
                     alt="Image"
                     className="img-fluid"
                   />
@@ -216,7 +216,7 @@ const Home = () => {
               <div className="drink-wrap h-100 ">
                 <a href="#" className="drink-thumbnail">
                   <img
-                    src="images/svg/drink4.svg"
+                    src="./images/svg/drink4.svg"
                     alt="Image"
                     className="img-fluid"
                   />
@@ -243,7 +243,7 @@ const Home = () => {
             <div className="col-lg-6 mb-5 mb-lg-0" data-aos="fade-up">
               <div className="img-wrap-welcome">
                 <img
-                  src="images/svg/drinkAlone.svg"
+                  src="./images/svg/drinkAlone.svg"
                   alt="Image"
                   className="img-fluid"
                 />
@@ -309,7 +309,7 @@ const Home = () => {
               data-aos-delay="100"
             >
               <img
-                src="images/svg/barman.svg"
+                src="./images/svg/barman.svg"
                 alt="image"
                 className="img-fluid"
               />
@@ -342,34 +342,34 @@ const Home = () => {
                   <div className="review-block text-center">
                     <div className="author-pic">
                       <img
-                        src="images/svg/person-1.svg"
+                        src="./images/svg/person-1.svg"
                         alt="Sonia Lopez"
                         className="img-fluid"
                       />
                     </div>
                     <div className="star mb-3">
                       <img
-                        src="images/svg/star.svg"
+                        src="./images/svg/star.svg"
                         alt="star"
                         className="img-fluid"
                       />
                       <img
-                        src="images/svg/star.svg"
+                        src="./images/svg/star.svg"
                         alt="star"
                         className="img-fluid"
                       />
                       <img
-                        src="images/svg/star.svg"
+                        src="./images/svg/star.svg"
                         alt="star"
                         className="img-fluid"
                       />
                       <img
-                        src="images/svg/star.svg"
+                        src="./images/svg/star.svg"
                         alt="star"
                         className="img-fluid"
                       />
                       <img
-                        src="images/svg/star.svg"
+                        src="./images/svg/star.svg"
                         alt="star"
                         className="img-fluid"
                       />
@@ -402,34 +402,34 @@ const Home = () => {
                   <div className="review-block text-center">
                     <div className="author-pic">
                       <img
-                        src="images/svg/person-2.svg"
+                        src="./images/svg/person-2.svg"
                         alt="George Lucas"
                         className="img-fluid"
                       />
                     </div>
                     <div className="star mb-3">
                       <img
-                        src="images/svg/star.svg"
+                        src="./images/svg/star.svg"
                         alt="star"
                         className="img-fluid"
                       />
                       <img
-                        src="images/svg/star.svg"
+                        src="./images/svg/star.svg"
                         alt="star"
                         className="img-fluid"
                       />
                       <img
-                        src="images/svg/star.svg"
+                        src="./images/svg/star.svg"
                         alt="star"
                         className="img-fluid"
                       />
                       <img
-                        src="images/svg/star.svg"
+                        src="./images/svg/star.svg"
                         alt="star"
                         className="img-fluid"
                       />
                       <img
-                        src="images/svg/star.svg"
+                        src="./images/svg/star.svg"
                         alt="star"
                         className="img-fluid"
                       />
@@ -463,34 +463,34 @@ const Home = () => {
                   <div className="review-block text-center">
                     <div className="author-pic">
                       <img
-                        src="images/svg/person-3.svg"
+                        src="./images/svg/person-3.svg"
                         alt="Andrew Lucas"
                         className="img-fluid"
                       />
                     </div>
                     <div className="star mb-3">
                       <img
-                        src="images/svg/star.svg"
+                        src="./images/svg/star.svg"
                         alt="star"
                         className="img-fluid"
                       />
                       <img
-                        src="images/svg/star.svg"
+                        src="./images/svg/star.svg"
                         alt="star"
                         className="img-fluid"
                       />
                       <img
-                        src="images/svg/star.svg"
+                        src="./images/svg/star.svg"
                         alt="star"
                         className="img-fluid"
                       />
                       <img
-                        src="images/svg/star.svg"
+                        src="./images/svg/star.svg"
                         alt="star"
                         className="img-fluid"
                       />
                       <img
-                        src="images/svg/star.svg"
+                        src="./images/svg/star.svg"
                         alt="star"
                         className="img-fluid"
                       />

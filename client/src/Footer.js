@@ -10,7 +10,7 @@ const Footer = () => {
             <div className="col-lg-5 mb-4 mb-lg-0">
               <a href="#" className="footer-logo d-block mb-4">
                 <img
-                  src="../images/svg/logo-footer.svg"
+                  src="./images/svg/logo-footer.svg"
                   alt="lounge logo"
                   className="img-fluid"
                 />

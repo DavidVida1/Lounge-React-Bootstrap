@@ -29,7 +29,7 @@ const Header = () => {
               <div className="col-6 col-md-6 col-lg-3 logo ">
                 <a href="#">
                   <img
-                    src="images/svg/logo.svg"
+                    src="./images/svg/logo.svg"
                     alt="Lounge Logo"
                     className="img-fluid"
                   />
