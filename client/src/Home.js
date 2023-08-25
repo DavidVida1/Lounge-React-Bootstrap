@@ -57,7 +57,7 @@ const Home = () => {
           <span className="circle-3"></span>
         </div>
 
-        <section className="hero-section">
+        <section className="hero-section ">
           <div className="container">
             <div className="row align-items-center justify-content-between ">
               <div className="col-lg-5 mb-5 mb-lg-0" data-aos="fade-up">
