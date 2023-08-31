@@ -63,7 +63,7 @@ const Home = () => {
                 <div id="circle-type" ref={circleInstance}>
                   <span>· Exquisite · Drinks</span>
                 </div>
-                <h1>Provide the best service for you.</h1>
+                <h1>Provides the best service for you.</h1>
                 <div className="row">
                   <div className="col-lg-10">
                     <p>
