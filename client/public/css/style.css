@@ -238,8 +238,8 @@
 /*------------------------- NavBAR -------------*/
 .custom-navbar {
     position: relative;
-    z-index: 0;
-    background-color: #2a201c;
+    z-index: 4;
+
     color: wheat;
 
 }
@@ -352,15 +352,13 @@
 /*-------------Home section-----------*/
 
 .circles-bg-navbar-hero-section-wrap {
-    background: var(--white);
-    /* z-index: 0;*/
+    background-color: #2a201c;
     position: relative;
-
-
 }
 
 .hero-section {
     padding: 1.3rem 0;
+    padding-bottom: 3rem;
     position: relative;
     z-index: 2;
     background-color: #2a201c;
@@ -370,7 +368,9 @@
 }
 
 .hero-section h1 {
+    position: relative;
     color: white;
+    z-index: 10;
 }
 
 .hero-section #circle-type {
@@ -394,6 +394,7 @@ h1,
 p {
     margin-bottom: 20px;
 
+
 }
 
 h1 {
@@ -404,44 +405,14 @@ h1 {
 
 p {
     line-height: 29px;
+    z-index: 10;
+
 }
 
 .img-wrap {
     position: relative;
     z-index: 7;
     left: 100px;
-}
-
-.img-wrap:before,
-.img-wrap:after,
-.bg-down:after {
-    content: "";
-    z-index: -1;
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    opacity: .3;
-}
-
-.img-wrap:before {
-    background-image: url("../images/svg/scrollwork.svg");
-    width: 546px;
-    height: 130%;
-    top: -55px;
-    left: -105px;
-    opacity: .6;
-    z-index: 3;
-
-}
-
-.img-wrap:after {
-    background-image: url("../images/svg/scrollwork2.svg");
-    width: 546px;
-    height: 100%;
-    top: 25%;
-    left: 55%;
-    opacity: .6;
-    z-index: 3;
 }
 
 
@@ -467,7 +438,7 @@ p {
 .btns-wrap {
     margin-bottom: 50px;
     position: relative;
-    z-index: 1;
+    z-index: 3;
 }
 
 .social-icons {

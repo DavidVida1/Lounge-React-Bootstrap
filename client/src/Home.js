@@ -51,13 +51,12 @@ const Home = () => {
   return (
     <>
       <div className="circles-bg-navbar-hero-section-wrap">
-        <div className="circles">
-          <span className="circle-1"></span>
-          <span className="circle-2"></span>
-          <span className="circle-3"></span>
-        </div>
-
         <section className="hero-section ">
+          <div className="circles">
+            <span className="circle-1"></span>
+            <span className="circle-2"></span>
+            <span className="circle-3"></span>
+          </div>
           <div className="container">
             <div className="row align-items-center justify-content-between ">
               <div className="col-lg-5 mb-5 mb-lg-0" data-aos="fade-up">
@@ -75,13 +74,14 @@ const Home = () => {
                   </div>
                 </div>
                 <div className="btns-wrap">
-                  <a href="#" className="btn btn-secondary me-2">
+                  <a href="#ourDrinks" className="btn btn-secondary me-2">
                     Menu
                   </a>
                   <a href="#" className="btn btn-primary me-2">
                     Book a table
                   </a>
                 </div>
+
                 <div className="social-icons">
                   <div className="social-icons-inner">
                     <a href="#">
@@ -121,6 +121,7 @@ const Home = () => {
       <section
         className="special-drink-section drink-section"
         data-aos="fade-up"
+        id="ourDrinks"
       >
         <div className="container">
           <div className="row mb-5">

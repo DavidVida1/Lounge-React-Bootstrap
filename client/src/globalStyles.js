@@ -24,7 +24,7 @@ export default createGlobalStyle`
 
 body,html {
     overflow-x: hidden;
-
+    scroll-behavior: smooth;
 }
 
 body {
