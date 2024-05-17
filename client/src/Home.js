@@ -69,7 +69,7 @@ const Home = () => {
                     <p>
                       Aenean posuere risus mauris, non euismod odio mollis sit
                       amet. Nunc ac auctor dui, elementum luctus ipsum. Nullam
-                      bibendum congue dignissim.
+                      bibendum congue dignissim
                     </p>
                   </div>
                 </div>
