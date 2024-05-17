@@ -1,6 +1,6 @@
 import GlobalStyles from "./GlobalStyles";
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import OurDrinks from "./OurDrinks";
 import WelcomeLounge from "./WelcomeLounge";
 import Barman from "./Barman";

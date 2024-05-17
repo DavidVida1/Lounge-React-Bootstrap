@@ -9,7 +9,7 @@ const WelcomeLounge = () => {
             <div className="img-wrap-welcome">
               <img
                 src="./images/svg/drinkAlone.svg"
-                alt="Image"
+                alt="drinkAloneImg"
                 className="img-fluid"
               />
             </div>

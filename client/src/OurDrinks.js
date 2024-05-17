@@ -1,5 +1,4 @@
-import styled from "styled-components";
-import React, { useEffect, useRef } from "react";
+import React from "react";
 
 const ourDrinks = () => {
   return (
