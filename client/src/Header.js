@@ -1,5 +1,4 @@
-import styled from "styled-components";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Navbar from "./Navbar.js";
 
 const Header = () => {
