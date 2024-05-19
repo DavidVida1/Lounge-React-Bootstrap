@@ -34,7 +34,8 @@ const Header = () => {
                   />
                 </a>
               </div>
-              <div className="col-lg-6 d-none d-lg-block text-center">
+
+              <div className="col-lg-9 d-none d-lg-block text-end">
                 <ul className="custom-nav js-clone-nav mt-2">
                   <li>
                     <a href="#">Menu</a>
@@ -53,10 +54,11 @@ const Header = () => {
                   </li>
                 </ul>
               </div>
-              <div className=" col-6 col-md-6 col-lg-3  text-end ">
-                <a href="#" className="btn btn-primary ">
+
+              <div className="col-6 col-md-6 col-lg-3  text-end ">
+                {/*<a href="#" className="btn btn-primary ">
                   Book a table
-                </a>
+                </a>*/}
 
                 <a
                   href="#"
