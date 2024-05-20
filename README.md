@@ -1,6 +1,6 @@
 # Lounge-React-Bootstrap. - https://davidvida1.github.io/Lounge/
 
-## 📝 Rough Resume
+## 📝 Rough Summary
 
 The Lounge website is a static page created by following a tutorial aimed at beginner front-end web developers. The purpose of this project was to learn Bootstrap and familiarize myself with CSS, HTML, JavaScript, and Figma. This project provided hands-on experience in building a professional-looking webpage using modern web development tools and design practices.
 
