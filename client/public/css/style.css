@@ -240,6 +240,7 @@
     position: relative;
     z-index: 4;
     color: wheat;
+
 }
 
 
@@ -256,19 +257,37 @@
 .custom-navbar .custom-nav {
     padding: 0;
     margin: 0;
-    background-color: #2a201c;
+    color: #2a201c;
+
+
 }
 
 .custom-navbar .custom-nav li {
     display: inline-block;
-    color: wheat;
+    color: var(--white);
+    background-color: var(--primary);
+    padding: 5px;
+
+    &:first-child {
+        border-radius: 4px 0px 0px 15px;
+    }
+
+    &:last-child {
+        border-radius: 0px 15px 4px 0px;
+    }
+
+
+
+
 }
 
 .custom-navbar .custom-nav a {
     padding: 10px 15px;
     display: inline-block;
     font-weight: 600;
-    color: wheat;
+    color: white;
+
+
 }
 
 .custom-navbar .custom-nav a:hover {
